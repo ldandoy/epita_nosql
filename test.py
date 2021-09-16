@@ -43,6 +43,27 @@ collection_name = dbname["users"]
 #collection_name.delete_many({"toto": {"$exists": True}})
 
 # Update part
+#users = list(collection_name.find({}))
+#if len(users) <= 0:
+#    print("There is no user found !")
+#else:
+#    for index, user in enumerate(users):
+#        print(str(index) + ": for " + str(user.get('name')))
+
+#number = int(input('Which one do you want to update ?\n'))
+#new_name = input('New name ?\n')
+
+#for index, user in enumerate(users):
+#    if index == number:
+#        id = user.get('_id')
+
+#collection_name.update_one({"_id": id}, {
+#    "$set": {
+#        "name": new_name
+#    }
+#})
+
+# Delete part
 users = list(collection_name.find({}))
 if len(users) <= 0:
     print("There is no user found !")
@@ -50,15 +71,10 @@ else:
     for index, user in enumerate(users):
         print(str(index) + ": for " + str(user.get('name')))
 
-number = int(input('Which one do you want to update ?\n'))
-new_name = input('New name ?\n')
+number = int(input('Which one do you want to delete ?\n'))
 
 for index, user in enumerate(users):
     if index == number:
         id = user.get('_id')
 
-collection_name.update_one({"_id": id}, {
-    "$set": {
-        "name": new_name
-    }
-})
+collection_name.delete_one({"_id": id})
