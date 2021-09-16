@@ -12,8 +12,6 @@ List all auteurs distincts ;
 
 Sort the publication of « Toru Ishida » by title and by start page ;
 
-Project result on title and pages ;
-
 Count his publications ;
 
 Count the number of publication since 2011 and group by type;
