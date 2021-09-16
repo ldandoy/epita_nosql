@@ -1,19 +1,17 @@
-Liste de tous les livres (type « Book ») ;
+List all the docmuents (type « Book ») ;
 
-Liste des publications depuis 2011 ;
+List all the document published since 2011 ;
 
-Liste des livres depuis 2014 ;
+List all the docmuents (type « Book ») published since 2014 ;
 
-Liste des publications de l’auteur « Toru Ishida » ;
+List all the docmuents of the autor « Toru Ishida » ;
 
-Liste de tous les éditeurs (type « publisher »), distincts ;
+List all distincts publishers (type « publisher ») ;
 
-Liste de tous les auteurs distincts ;
+List all auteurs distincts ;
 
-Trier les publications de « Toru Ishida » par titre de livre et par page de début ;
+Sort the publication of « Toru Ishida » by title and by start page ;
 
-Projeter le résultat sur le titre de la publication, et les pages ;
+Count hist publications ;
 
-Compter le nombre de ses publications ;
-
-Compter le nombre de publications depuis 2011 et par type ;
+Count the number of publication since 2011 and group by type;
