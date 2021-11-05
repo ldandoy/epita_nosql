@@ -3,6 +3,7 @@ import { db } from './utils/db.js';
 import bodyParser from 'body-parser';
 
 import AnimalsRoutes from './routes/animals.js'
+import EnclosureRoutes from './routes/enclosures.js'
 
 db();
 
@@ -12,6 +13,7 @@ const port = 5000;
 app.use(bodyParser());
 
 app.use('/', AnimalsRoutes);
+app.use('/enclosures', EnclosureRoutes);
 
 app.get('/:name', (req, res) => {
     let { name } = req.params;
